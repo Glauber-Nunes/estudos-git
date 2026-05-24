@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.enums.StatusCliente;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
@@ -18,4 +19,6 @@ public class Cliente {
     private String email;
     @Column(unique = true)
     private String telefone;
+
+    private StatusCliente status;
 }

@@ -1,6 +1,7 @@
 package com.example.demo.dto.request;
 
 
+import com.example.demo.enums.StatusCliente;
 import lombok.Builder;
 import lombok.Data;
 
@@ -14,4 +15,6 @@ public class ClienteRequest {
     private String email;
 
     private String telefone;
+
+    private StatusCliente status;
 }

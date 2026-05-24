@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Entity
 @Data
 @Builder
@@ -21,4 +23,6 @@ public class Cliente {
     private String telefone;
 
     private StatusCliente status;
+
+    private LocalDate dataCadastro = LocalDate.now();
 }
